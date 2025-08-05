@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Extensiones en Linux</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Extensiones en Linux</h1>
+    <p>Personaliza y potencia tu experiencia en Linux con extensiones útiles.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué son las extensiones en Linux?</h2>
+      <p>Las extensiones en Linux permiten ampliar las funcionalidades del entorno de escritorio, como GNOME, KDE o XFCE. Estas herramientas pueden cambiar la apariencia, agregar accesos rápidos, gestionar ventanas de manera más eficiente y mucho más.</p>
+    </section>
+
+    <section>
+      <h2>Extensiones populares para GNOME</h2>
+      <ul>
+        <li><strong>Dash to Dock:</strong> Convierte el dock en una barra tipo macOS.</li>
+        <li><strong>GSConnect:</strong> Permite integrar tu teléfono Android con el escritorio.</li>
+        <li><strong>Clipboard Indicator:</strong> Muestra el historial del portapapeles.</li>
+        <li><strong>Sound Input & Output Device Chooser:</strong> Cambia fácilmente dispositivos de audio.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>¿Cómo instalar extensiones en GNOME?</h2>
+      <h3>Desde el navegador</h3>
+      <p>1. Visita <a href="https://extensions.gnome.org" target="_blank">extensions.gnome.org</a></p>
+      <p>2. Instala el complemento de navegador "GNOME Shell integration".</p>
+      <p>3. Habilita las extensiones directamente desde el sitio.</p>
+
+      <h3>Por consola</h3>
+      <pre><code>sudo apt install gnome-shell-extensions
+gnome-extensions enable nombre.extension</code></pre>
+    </section>
+
+    <section>
+      <h2>Extensiones en KDE</h2>
+      <p>En KDE se utilizan los "plasmoides" y scripts para agregar funcionalidades.</p>
+      <ul>
+        <li><strong>Latte Dock:</strong> Dock animado con muchas opciones de personalización.</li>
+        <li><strong>KRunner Plugins:</strong> Extiende las búsquedas inteligentes.</li>
+        <li><strong>KDE Connect:</strong> Comunicación entre PC y Android.</li>
+      </ul>
+
+      <h3>Instalación</h3>
+      <p>Desde Discover (tienda de aplicaciones) o mediante terminal:</p>
+      <pre><code>plasmapkg2 --install archivo.plasmoid</code></pre>
+      <p>O desde <a href="https://store.kde.org" target="_blank">store.kde.org</a></p>
+    </section>
+
+    <section>
+      <h2>Extensiones para terminal (CLI)</h2>
+      <ul>
+        <li><strong>fzf:</strong> Fuzzy finder para buscar archivos rápidamente.</li>
+        <li><strong>exa:</strong> Reemplazo moderno para <code>ls</code>.</li>
+        <li><strong>bat:</strong> Vista mejorada para archivos de texto con resaltado.</li>
+      </ul>
+
+      <h3>Instalación</h3>
+      <pre><code>sudo apt install fzf exa bat
+# o usando Homebrew en Linux
+brew install fzf exa bat</code></pre>
+    </section>
+
+    <section>
+      <h2>Recomendaciones adicionales</h2>
+      <p>Consulta estas fuentes para más extensiones:</p>
+      <ul>
+        <li><a href="https://extensions.gnome.org" target="_blank">extensions.gnome.org</a></li>
+        <li><a href="https://store.kde.org" target="_blank">store.kde.org</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub (repositorios de extensiones)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Alexander</p>
+  </footer>
+</body>
+</html>

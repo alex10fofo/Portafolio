@@ -1,0 +1,78 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  background-color: #4b4b4b0c;
+  color: #fffcfc;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #33333300;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.comando {
+  background-color: #444;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.comando h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+code {
+  background-color: #35323262;
+  color: #a221da;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .comando {
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}

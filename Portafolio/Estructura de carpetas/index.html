@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estructura de Carpetas en Linux</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Estructura de Carpetas en Linux</h1>
+    <p>Explora cómo se organiza el sistema de archivos en Linux, basado en el estándar FHS.</p>
+  </header>
+
+  <section class="contenido">
+    <h2>Estructura principal de directorios en Linux</h2>
+    <h2>La estructura de carpetas en Linux sigue una jerarquía tipo árbol, donde todo parte del directorio raíz /. Esta organización está definida por el estándar FHS (Filesystem Hierarchy Standard), que establece qué contiene cada carpeta principal del sistema.</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Carpeta</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>/</td><td>Directorio raíz. Todo el sistema parte de aquí.</td></tr>
+        <tr><td>/bin</td><td>Binarios esenciales del sistema (comandos como ls, cp, mv, etc.)</td></tr>
+        <tr><td>/boot</td><td>Archivos necesarios para el arranque del sistema (kernel, GRUB, etc.)</td></tr>
+        <tr><td>/dev</td><td>Archivos de dispositivos (discos, terminales, etc.)</td></tr>
+        <tr><td>/etc</td><td>Archivos de configuración del sistema</td></tr>
+        <tr><td>/home</td><td>Directorios personales de los usuarios</td></tr>
+        <tr><td>/lib</td><td>Bibliotecas compartidas necesarias para ejecutar los binarios en /bin</td></tr>
+        <tr><td>/media</td><td>Punto de montaje para dispositivos externos (USB, CD, etc.)</td></tr>
+        <tr><td>/mnt</td><td>Punto de montaje temporal para sistemas de archivos</td></tr>
+        <tr><td>/opt</td><td>Software adicional instalado manualmente</td></tr>
+        <tr><td>/proc</td><td>Información del sistema y procesos en tiempo real (virtual)</td></tr>
+        <tr><td>/root</td><td>Carpeta personal del usuario root</td></tr>
+        <tr><td>/run</td><td>Información de estado del sistema desde el arranque</td></tr>
+        <tr><td>/sbin</td><td>Binarios esenciales para administración del sistema</td></tr>
+        <tr><td>/srv</td><td>Datos para servicios ofrecidos por el sistema (servidores web)</td></tr>
+        <tr><td>/tmp</td><td>Archivos temporales</td></tr>
+        <tr><td>/usr</td><td>Programas y archivos de usuario compartidos</td></tr>
+        <tr><td>/var</td><td>Archivos variables como logs, colas de impresión, bases de datos</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A    L     E     X</p>
+  </footer>
+</body>
+</html>

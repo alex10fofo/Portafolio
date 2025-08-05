@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Sistemas Operativos</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+     <header>
+    <h1>Tipos de Sistemas Operativos</h1>
+  </header>
+
+  <div class="carousel-container">
+    <button class="nav-button prev" onclick="moveSlide(-1)">&#8592;</button>
+    <div class="carousel" id="carousel">
+      <div class="card">
+        <img src="./img/66341979_1628539270408.png" alt="Tiempo Compartido">
+        <h2>MONOUSUARIO</h2>
+        <p>Permite a un solo usuario acceder a los recursos de la computadora a la vez.</p>
+        <p>Ejemplos: MS-DOS, Windows 3.x. Usados en PCs y estaciones de trabajo.</p>
+      </div>
+      <div class="card">
+        <img src="./img/mulllti.jpeg" alt="Tiempo Real">
+        <h2>MULTIUSUARIO</h2>
+        <p>Permite a varios usuarios acceder a los recursos de la computadora simultáneamente.</p>
+        <p>Ejemplos: UNIX, Linux. Usados en servidores y entornos de trabajo colaborativo.</p>
+      </div>
+      <div class="card">
+        <img src="./img/mono.jpg" alt="Distribuidos">
+        <h2>MONOTAREA</h2>
+        <p>Permite ejecutar un solo proceso a la vez, sin multitarea.</p>
+        <p>Ejemplos: MS-DOS, Windows 3.x. Usados en PCs y estaciones de trabajo.</p>
+      </div>
+      <div class="card">
+        <img src="./img/multi.jpg" alt="bajo">
+        <h2>MULTITAREA</h2>
+        <p>Permite a múltiples procesos o hilos ejecutarse simultáneamente en una sola computadora.</p>
+        <p>Ejemplos: Windows, Linux. Usados en PCs y servidores.</p>
+      </div>
+      <div class="card">
+        <img src="./img/uniç.jpeg" alt=alto">
+        <h2>UNIPROCESO</h2>
+        <p>Aquel que solo puede manejar un procesador a la vez.</p>
+        <p>Ejemplos: Android, iOS. Optimizados para interfaces táctiles y bajo consumo energético.  </p>
+      </div>
+      <div class="card">
+        <img src="./img/multiproceso.gif" alt="Móviles">
+        <h2>MULTIPROCESO</h2>
+        <p>Aquellos dispositivos que pueden manejar múltiples procesadores a la vez.</p>
+        <p>Ejemplos: Windows Server, Linux. Usados en servidores y estaciones de trabajo de alto rendimiento.</p>
+      </div>
+    </div>
+    <button class="nav-button next" onclick="moveSlide(1)">&#8594;</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.card').length;
+    const carousel = document.getElementById('carousel');
+
+    function moveSlide(step) {
+      currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>
+    
